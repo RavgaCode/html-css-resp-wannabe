@@ -129,7 +129,7 @@ img {
  ************************************************/
 
 /* Da qui tablet */
-@media tablet and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 768px;
     margin: 0 auto;
