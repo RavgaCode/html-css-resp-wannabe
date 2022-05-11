@@ -131,13 +131,35 @@ img {
 /* Da qui tablet */
 @media screen and (max-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
-  .steps {
+}
+/* Da qui mobile */
+@media screen and (max-width: 480px) {
+  .container {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .lessons .col,
+  .steps .col,
+  .why-us .col-left,
+  .why-us .col-right {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+  .why-us {
+    background-color: black;
+    margin-bottom: 0;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+  .steps {
+    margin-bottom: 0;
   }
 }
